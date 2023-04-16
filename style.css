@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background: rgb(251, 188, 188); */
+}
+
+#nav {
+    height: 92px;
+    width: 100%;
+    background-color: rgb(172, 222, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    border-bottom: 2px solid black;
+}
+
+#nav h4 {
+    font-size: 16px;
+    font-family: aeonik;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+#center {
+    height: calc(100% - 100px);
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    padding: 14px 21px;
+
+}
+
+#center h1 {
+    font-size: 90px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    font-style: italic;
+    z-index: 99;
+}
+
+#center h2 {
+    font-size: 90px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+
+    left: 49.4%;
+    top: 4px;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+    font-style: italic;
+}
+
+#image {
+    position: absolute;
+    top: 62%;
+    height: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    /* background-color: rgb(223, 134, 17); */
+    border-radius: 50%;
+
+    border: 2px solid black;
+}
+
+#image img {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    height: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 100% - 90%;
+    width: 94%;
+    border: 2px solid black;
+
+}
+
+#btn1 {
+    padding: 16px 34px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: arial;
+
+    position: absolute;
+    top: 28%;
+    right: 8%;
+    transform: rotate(-8deg);
+
+    background-color: rgba(77, 245, 77, 0.918);
+    text-transform: uppercase;
+    border-radius: 50%;
+    text-decoration: capitalize;
+
+}
+
+#socks1 {
+    height: 210px;
+    width: 230px;
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    z-index: 99;
+    transform: rotate(6deg);
+    /* background-image: url(https://media.happysocks.com/images/FDS01-7300_W_small.jpg?width=414&format=pjpg&quality=70&auto=webp&bg-color=fafafa);
+    background-size: cover;
+    background-position: center; */
+    border: 2px solid black;
+}
+
+#socks1::after {
+    content: "";
+    height: 210px;
+    width: 230px;
+
+    background-image: url(https://media.happysocks.com/images/FDS01-7300_W_small.jpg?width=414&format=pjpg&quality=70&auto=webp&bg-color=fafafa);
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: -18px;
+    right: -18px;
+
+    border: 2px solid black;
+    z-index: -1 !important;
+}
+
+
+#btn2 {
+    padding: 18px 36px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: arial;
+
+    position: absolute;
+    top: 84%;
+    left: 9%;
+    transform: rotate(16deg);
+
+    background-color: rgba(68, 255, 68, 0.918);
+    text-transform: uppercase;
+    border-radius: 50%;
+    text-decoration: capitalize;
+}
+
+
+#socks2 {
+    height: 200px;
+    width: 210px;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    z-index: 99;
+    transform: rotate(-4deg);
+
+    /* background-image: url(https://media.happysocks.com/images/EGS01-9300_M_Small.jpg?width=414&format=pjpg&quality=70&auto=webp&bg-color=fafafa);
+    background-size: cover;
+    background-position: center; */
+    border: 2px solid black;
+    
+}
+
+#socks2::after {
+    content: "";
+    height: 200px;
+    width: 210px;
+
+    background-image: url(https://media.happysocks.com/images/EGS01-9300_M_Small.jpg?width=414&format=pjpg&quality=70&auto=webp&bg-color=fafafa);
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    border: 2px solid black;
+    z-index: -1 !important;
+}
+
+/* ____________________________________________________xxxXXXxxx__________________________________________________ */
